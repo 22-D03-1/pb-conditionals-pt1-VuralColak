@@ -48,24 +48,44 @@ const anzahl3a = 44;
 const anzahl3b = 71;
 const anzahl3c = 83;
 
-if ((anzahl3a > anzahl3b) && (anzahl3a > anzahl3c)){
-    console.log("Größte Zahl ist " + anzahl3a);
-} else if ((anzahl3b > anzahl3a) && (anzahl3b > anzahl3c)){
-    console.log("Größte Zahl ist " + anzahl3b);
-} else console.log("Größte Zahl ist " + anzahl3c);
+//Erste Weg:
 
+// if ((anzahl3a > anzahl3b) && (anzahl3a > anzahl3c)){
+//     console.log("Größte Zahl ist " + anzahl3a);
+// } else if ((anzahl3b > anzahl3a) && (anzahl3b > anzahl3c)){
+//     console.log("Größte Zahl ist " + anzahl3b);
+// } else console.log("Größte Zahl ist " + anzahl3c);
+
+//Zweite Weg:
+
+const biggestInt = Math.max(anzahl3a, anzahl3b, anzahl3c);
+
+if (biggestInt === anzahl3a){
+    console.log("3", anzahl3a);
+} else if (biggestInt === anzahl3b){
+    console.log("3", anzahl3b);
+} else (biggestInt === anzahl3c)
+    console.log("3", anzahl3c);
 
 //////////////////////////////////////////////
 console.log("-----------------------------------------------------------------");
 console.log("Aufgabe 4 : ");
 // Erstelle eine neue Zeichenkette, indem du "Py" vor eine gegebene Zeichenkette setzt. Wenn die gegebene Zeichenkette mit "Py" beginnt, gib die ursprüngliche Zeichenkette aus.
 
-const str4 = "thon";
-const strWithPy = "Py";
+// erste Weg:
+// const str4 = "thon";
+// const strWithPy = "Py";
 
-if (str4.includes(strWithPy)){
-    console.log(str4);
-} else console.log(str4 + strWithPy);
+// if (str4.includes(strWithPy)){
+//     console.log(str4);
+// } else console.log(str4 + strWithPy);
+
+//zweite Weg:
+
+const str4b = "Python";
+const positionVonPy = str4b.indexOf("Py");
+
+
 
 
 //////////////////////////////////////////////
